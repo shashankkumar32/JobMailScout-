@@ -11,7 +11,7 @@ export default function Home() {
     className="flex items-center justify-center space-x-1 p-2 md:p-1 border border-white rounded-full hover:shadow-lg backdrop-blur-sm bg-white/10 transition duration-200 ease-in-out"
   >
     <img
-      src="/mail.gif" // Replace with the actual path or URL to your GIF
+      src="/mail.gif" 
       alt="Loading Animation"
       className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-cover rounded-full pr-2"
     />
