@@ -142,7 +142,7 @@ The focus is on identifying applications sent via platforms like LinkedIn or ema
           if (!response.ok) {
             throw new Error("Failed to fetch emails");
           }
-          
+
 
           const data = await response.json();
 
@@ -216,7 +216,7 @@ The focus is on identifying applications sent via platforms like LinkedIn or ema
     return (
       <CustomAlert variant={"default"} headsUp={"Loading.."} description={"LOading"} >
            <img
-          src="/loader.gif" // Replace with your SVG source
+          src="/loader.gif" 
           alt="Placeholder"
           className="w-full h-auto object-contain"
         />
