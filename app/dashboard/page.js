@@ -142,12 +142,13 @@ The focus is on identifying applications sent via platforms like LinkedIn or ema
           if (!response.ok) {
             throw new Error("Failed to fetch emails");
           }
+          
 
           const data = await response.json();
 
           if (data.messages) {
             const messageDetails = await Promise.all(
-              data.messages.slice(0, 5).map(async (message) => {
+              data.messages.slice(0, 3).map(async (message) => {
                 const messageRes = await fetch(
                   `https://gmail.googleapis.com/gmail/v1/users/me/messages/${message.id}`,
                   {
